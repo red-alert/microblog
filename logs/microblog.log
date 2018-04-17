@@ -1,0 +1,23 @@
+2018-04-17 16:34:23,192 INFO: Microblog startup [in C:\Users\YaoL\Documents\GitHub\microblog\app\__init__.py:42]
+2018-04-17 16:34:29,476 ERROR: Exception on /edit_profile [GET] [in c:\users\yaol\documents\github\microblog\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\users\yaol\documents\github\microblog\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\yaol\documents\github\microblog\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\yaol\documents\github\microblog\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\yaol\documents\github\microblog\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\users\yaol\documents\github\microblog\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\yaol\documents\github\microblog\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\yaol\documents\github\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\YaoL\Documents\GitHub\microblog\app\routes.py", line 75, in edit_profile
+    form = EditProfileForm()
+  File "c:\users\yaol\documents\github\microblog\venv\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'original_username'
+2018-04-17 16:39:52,132 INFO: Microblog startup [in C:\Users\YaoL\Documents\GitHub\microblog\app\__init__.py:42]
